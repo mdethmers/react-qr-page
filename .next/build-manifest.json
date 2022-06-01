@@ -30,10 +30,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/infoPages/POIinfo": [
+    "/infoPages/QRinfo": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/infoPages/POIinfo.js"
+      "static/chunks/pages/infoPages/QRinfo.js"
     ]
   },
   "ampFirstPages": []

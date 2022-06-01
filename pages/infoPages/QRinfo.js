@@ -91,6 +91,7 @@ class QRpage extends Component {
                 onChange={(event) =>
                   this.setState({ description: event.target.value })
                 }
+                value={this.state.description}
               />
               <div className={style.centre}>
                 <Button
