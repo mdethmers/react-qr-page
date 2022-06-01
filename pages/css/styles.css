@@ -1,0 +1,5 @@
+body {
+    background: url(../../public/img/OneGo_background-12.jpg)  no-repeat center center fixed !important;
+    background-size: cover !important;
+    height: 100vh;
+  }

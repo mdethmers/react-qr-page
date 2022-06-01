@@ -1,0 +1,43 @@
+.logo{
+    background-image: url(../../public/img/onego_logo.svg) ;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 50% 50%;
+    height: 100px;
+}
+
+.light{
+    color: #fff;
+}
+
+.heading {
+    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    font-family: Poppins, sans-serif;
+    font-size: 5vw;
+    font-weight: 700;
+    color: #fff;
+}
+
+.centre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.column {
+    padding-left: 2rem !important;
+}
