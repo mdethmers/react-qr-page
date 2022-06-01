@@ -1,10 +1,13 @@
 import React, { Component, Modal } from "react";
 import { Card, Grid } from "semantic-ui-react";
 import style from "../css/index.module.css";
-import ErrorModal from '../components/ErrorModal'
-
+import NegativeMessage from "../components/NegativeMessage";
 
 class POIpage extends Component {
+
+  state = {
+    negativeVisible : false,
+  }
 
   static async getInitialProps(props) {
     try {
@@ -28,6 +31,7 @@ class POIpage extends Component {
         poiName: props.query.poiName,
       };
     } catch (error) {
+      this.setState({negativeVisible: true})
     }
   }
 
@@ -53,7 +57,7 @@ class POIpage extends Component {
         ></Card.Group>
       );
     } catch (error) {
-
+      this.setState({negativeVisible: true})
     }
   }
 
@@ -75,6 +79,11 @@ class POIpage extends Component {
         </Grid.Row>
         <Grid.Row centered>
           {this.renderPoiList()}
+        </Grid.Row>
+        <Grid.Row>
+          <Grid.Column  className={style.column}>
+            <NegativeMessage hidden={!this.state.negativeVisible}></NegativeMessage>
+          </Grid.Column>
         </Grid.Row>
         
         

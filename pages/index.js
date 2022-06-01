@@ -9,7 +9,7 @@ import router from "next/router";
 
 class Index extends Component {
   state = {
-    id: "",
+    id: '',
     poiName: "",
   };
 
