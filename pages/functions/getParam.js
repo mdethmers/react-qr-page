@@ -5,6 +5,7 @@ function getParam(param){
         let foo = params.get(param);
         return foo;
       }
+    else return 1;
 
 }
 
