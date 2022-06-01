@@ -1,4 +1,5 @@
 import React, { Component, Modal } from "react";
+import "semantic-ui-css/semantic.min.css";
 import { Card, Grid } from "semantic-ui-react";
 import style from "../css/index.module.css";
 import NegativeMessage from "../components/NegativeMessage";
